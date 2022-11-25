@@ -1,0 +1,16 @@
+name: NMaster
+title: NMaster - Automatização.
+description: Bots e soluções inteligentes.
+url: https://suportemasterbot.github.io
+author: Nilsonlinux
+github: https://github.com/Suportemasterbot/
+twitter: Nilsonlinux
+googleAnalyticsId: UA-40712139-3
+
+encoding: utf-8
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  smart_quotes: ["apos", "apos", "quot", "quot"]
