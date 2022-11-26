@@ -10,7 +10,8 @@ mastodon: Nilsonlinux
 facebook: Nilsonlinux
 reddit: Nilsonlinux
 discord: Nilsonlinux
-googleAnalyticsId: G-PD6MEPSY43
+gettr: Nilsonlinux
+googleAnalyticsId: UA-40712139-0
 
 encoding: utf-8
 markdown: kramdown
