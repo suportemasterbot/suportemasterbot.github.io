@@ -86,6 +86,7 @@ title: Doações
                 {% for donator in sortedDonators %}
                 <tr>
                     <td>{{ donator.name }}
+                        {% if donator.telegram %}<a href="{{ donator.telegram }}"><i class="fab fa-telegram"></i></a>{% endif %}
                         {% if donator.twitter %}<a href="{{ donator.twitter }}"><i class="fab fa-twitter"></i></a>{% endif %}
                         {% if donator.facebook %}<a href="{{ donator.facebook }}"><i class="fab fa-facebook"></i></a>{% endif %}
                         {% if donator.github %}<a href="{{ donator.github }}"><i class="fab fa-github"></i></a>{% endif %}
