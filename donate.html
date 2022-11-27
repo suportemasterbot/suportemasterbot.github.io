@@ -79,7 +79,7 @@ title: Doações
             <table class="table">
                 <tr>
                     <th>Nome</th>
-                    <th>Perfil</th>
+                    <th>Cidade</th>
                     <th>Valor</th>
                 </tr>
                 {% assign sortedDonators = site.data.donators | sort: "amount" | reverse %}
@@ -96,7 +96,7 @@ title: Doações
                         {% if donator.instagram %}<a href="{{ donator.instagram }}" target="_blank"><i class="fab fa-instagram"></i></a>{% endif %}
                         {% if donator.steam %}<a href="{{ donator.steam }}" target="_blank"><i class="fab fa-steam"></i></a>{% endif %}
                     </td>
-                    <td>{% if donator.website %}<a href="{{ donator.website }}">{{ donator.website }}</a>{% endif %}</td>
+                    <td>{% if donator.cidade %}<a href="{{ donator.cidade }}">{{ donator.cidade }}</a>{% endif %}</td>
                     <td>{% if donator.amount %}R$ {{ donator.amount }}{% else %}*{% endif %}</td>
                 </tr>
                 {% endfor %}
