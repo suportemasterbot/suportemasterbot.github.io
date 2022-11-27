@@ -19,7 +19,7 @@ layout: default
         <div class="collapse" id="download-panel">
             <div class="d-inline-block">
                 <a class="btn sharex-steam" role="button" data-toggle="tooltip" data-placement="bottom" title="" href="#"><i class="fa-solid fa-award"></i>
-                    <td>{{ donator.name }}</td>
+                    <td>{% if donator.cidade %}{{ donator.cidade }}{% else %}*{% endif %}</td>
                 </a>
             </div>
         </div>
