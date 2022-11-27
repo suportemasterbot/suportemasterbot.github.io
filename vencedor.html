@@ -1,7 +1,7 @@
 ---
 layout: simple
 ---
-
+<center>
 <meta http-equiv="refresh" content="3" />
             </div>
                      <div class="container-donate-2">
@@ -9,13 +9,13 @@ layout: simple
                     {% assign sortedDonators = site.data.vencedor | sort: "amount" | reverse %}
                     {% for donator in sortedDonators %}
                     <tr>
-                        <center><td>{{ donator.name }}</td></center>
+                        <td>{{ donator.name }}</td>
                     </tr>
                     {% endfor %}
                 </table>
             </div>
         </div>
     </div>
-
+</center>
     {% include common-js.html %}
     <script src="/js/sharex.main.js"></script>
