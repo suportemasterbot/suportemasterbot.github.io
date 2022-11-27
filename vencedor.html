@@ -9,7 +9,7 @@ layout: simple
                     {% assign sortedDonators = site.data.vencedor | sort: "amount" | reverse %}
                     {% for donator in sortedDonators %}
                     <tr>
-                        <td>{{ donator.name }}</td>
+                        <center><td>{{ donator.name }}</td></center>
                     </tr>
                     {% endfor %}
                 </table>
