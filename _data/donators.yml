@@ -1,16 +1,5 @@
-- name: Zterio
-  website: https://i5.io
-  amount: 485
-
-- name: Dinnerbone
-  twitter: https://twitter.com/Dinnerbone
-  website: https://dinnerbone.com
+- name: Aguardando
+  twitter: #
+  website: #
   amount: 380
 
-- name: Dean Herbert
-  twitter: https://twitter.com/ppy
-  website: https://ppy.sh
-  amount: 732
-
-- name: Mattie Casper
-  amount: 215
