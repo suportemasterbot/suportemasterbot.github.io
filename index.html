@@ -17,9 +17,13 @@ layout: default
             </a>
         </div>
         <div class="collapse" id="download-panel">
-         </a>
-            <img class="btn img-fluid" src="/img/suportemaster.png" alt="Image" height="80" width="80" />
-            </div>
+            <div class="d-inline-block">
+             <div class="container-donate-2">
+    <div class="container">
+        <div class="patrons-panel">
+            <h3>Vencedor</h3>
+            <img class="img-fluid" src="/img/suportemaster.png" alt="Image" height="80" width="80" />
+            <table class="btn table">
                      </tr>
                 {% assign sortedDonators = site.data.vencedor | sort: "amount" | reverse %}
                 {% for donator in sortedDonators %}
