@@ -1,5 +1,6 @@
 - name: Aguardando vencedor...
   twitter: #
+  telegram: https://t.me/NIlsonlinux
   website: #
   amount: 0
 
