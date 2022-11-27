@@ -5,7 +5,7 @@ layout: simple
 <meta http-equiv="refresh" content="3" />
             </div>
                      <div class="container-donate-2">
-                <table class="bitcoin-modal">
+                <table class="btn">
                     {% assign sortedDonators = site.data.vencedor | sort: "amount" | reverse %}
                     {% for donator in sortedDonators %}
                     <tr>
