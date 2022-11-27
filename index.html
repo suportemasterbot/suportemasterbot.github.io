@@ -18,12 +18,13 @@ layout: default
         </div>
         <div class="collapse" id="download-panel">
             <div class="d-inline-block">
-             <div class="container-donate-2">
+                <a class="sharex-steam container-donate-2" role="button" data-toggle="tooltip" data-placement="bottom" title="" href="#"><i class="fa-solid fa-award"></i>
+ <div class="container-donate-2">
     <div class="container">
         <div class="patrons-panel">
-            <h3>Vencedor</h3>
             <img class="img-fluid" src="/img/suportemaster.png" alt="Image" height="80" width="80" />
-            <table class="btn table">
+            <h3>Vencedor</h3>
+            <table class="table btn">
                      </tr>
                 {% assign sortedDonators = site.data.vencedor | sort: "amount" | reverse %}
                 {% for donator in sortedDonators %}
