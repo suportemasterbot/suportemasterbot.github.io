@@ -1,0 +1,62 @@
+---
+layout: page
+title: Doações
+---
+
+<html>
+<head>
+<script type="text/javaScript">
+
+function autoRefresh(interval) {
+	setTimeout("atualizar();",interval);
+}
+function atualizar() {
+  // faz a lógica desejada...
+}
+
+</script>
+<body onload="javascript:autoRefresh(6000);">
+  
+    <div class="jumbotron jumbotron-main">
+        <div class="container">
+            <h1>{{ site.name }}</h1>
+                <img class="img-fluid" src="/img/suportemaster.png" alt="Image" height="100" width="100" />
+            <p>Automatização sob demanda. Faça uma doação e participe do sorteio. Próximo sorteio dia 25/12/2022</p>
+            <div>
+                <button class="btn sharex-download" type="button" data-toggle="collapse" data-target="#download-panel">
+                    Vencedor<i class="fa-solid fa-trophy"></i>
+                </button>
+                </a>
+                <a class="btn" role="button" href="/donate">
+                    Doações<i class="fa-solid fa-heart"></i>
+                </a>
+            </div>
+            <div class="collapse" id="download-panel">
+                <div class="d-inline-block">
+                     <div class="container-donate-2">
+                <img class="img-fluid" src="/img/cashapp.png" alt="Image" height="80" width="80" />
+                <h4>VENCEDOR</h4>
+                <table class="btn">
+                    {% assign sortedDonators = site.data.vencedor | sort: "amount" | reverse %}
+                    {% for donator in sortedDonators %}
+                    <tr>
+                        <td>{{ donator.name }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include common-js.html %}
+<script src="/js/sharex.main.js"></script>
+
+
+
+</body>
+</html>
