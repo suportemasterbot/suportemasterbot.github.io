@@ -75,12 +75,12 @@ title: Doações
 <div class="container-donate-2">
     <div class="container">
         <div class="patrons-panel">
-            <h3>Donators</h3>
+            <h3>Vencedores</h3>
             <table class="table">
                 <tr>
                     <th>Nome</th>
                     <th>Perfil</th>
-                    <th>Valor doado</th>
+                    <th>Valor</th>
                 </tr>
                 {% assign sortedDonators = site.data.donators | sort: "amount" | reverse %}
                 {% for donator in sortedDonators %}
