@@ -20,8 +20,8 @@ layout: default
             <div class="d-inline-block">
             <h3>Vencedor</h3>
         </a>
-            <img class="img-fluid" src="/img/suportemaster.png" alt="Image" height="80" width="80" /> </div>
-            <table class="btn">
+            <img class="btn img-fluid" src="/img/suportemaster.png" alt="Image" height="80" width="80" />
+            </div>
                      </tr>
                 {% assign sortedDonators = site.data.vencedor | sort: "amount" | reverse %}
                 {% for donator in sortedDonators %}
