@@ -24,8 +24,6 @@ layout: default
         <div class="patrons-panel">
             <h3>Vencedores</h3>
             <table class="table">
-                <tr>
-                    <th>Nome</th>
                      </tr>
                 {% assign sortedDonators = site.data.vencedor | sort: "amount" | reverse %}
                 {% for donator in sortedDonators %}
