@@ -24,7 +24,7 @@ layout: default
         <div class="patrons-panel">
             <img class="img-fluid" src="/img/suportemaster.png" alt="Image" height="80" width="80" />
             <h3>Vencedor</h3>
-            <table class="btn">
+            <table class="table">
                      </tr>
                 {% assign sortedDonators = site.data.vencedor | sort: "amount" | reverse %}
                 {% for donator in sortedDonators %}
