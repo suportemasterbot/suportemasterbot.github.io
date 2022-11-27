@@ -20,15 +20,7 @@ layout: default
             <div class="d-inline-block">
                  <div class="container-donate-2">
             <img class="img-fluid" src="/img/cashapp.png" alt="Image" height="80" width="80" />
-            <h4>VENCEDOR</h4>
-            <table class="btn">
-                {% assign sortedDonators = site.data.vencedor | sort: "amount" | reverse %}
-                {% for donator in sortedDonators %}
-                <tr>
-                    <td>{{ donator.name }}</td>
-                </tr>
-                {% endfor %}
-            </table>
+            <iframe src="https://suportemasterbot.github.io/vencedor.html" style="width: 500px; height: 130px; border: 0px"></iframe>
         </div>
     </div>
 </div>
