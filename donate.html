@@ -78,9 +78,9 @@ title: Doações
             <h3>Donators</h3>
             <table class="table">
                 <tr>
-                    <th>Name</th>
-                    <th>Website</th>
-                    <th>Total donation amount</th>
+                    <th>Nome</th>
+                    <th>Perfil</th>
+                    <th>Valor doado</th>
                 </tr>
                 {% assign sortedDonators = site.data.donators | sort: "amount" | reverse %}
                 {% for donator in sortedDonators %}
