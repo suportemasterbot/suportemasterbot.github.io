@@ -21,7 +21,7 @@ layout: default
                  <div class="container-donate-2">
             <img class="img-fluid" src="/img/suportemaster.png" alt="Image" height="80" width="80" />
             <h3>Vencedor</h3>
-            <table class="table">
+            <table class="table button">
                 {% assign sortedDonators = site.data.vencedor | sort: "amount" | reverse %}
                 {% for donator in sortedDonators %}
                 <tr>
