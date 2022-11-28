@@ -13,7 +13,7 @@ layout: simple
                 <table class="btn button">
                     {% assign sortedDonators = site.data.vencedor | sort: "amount" | reverse %}
                     {% for donator in sortedDonators %}
-                        <img class="img-fluid" src="/img/cashapp.png" alt="Image" height="80" width="80" />
+                    <i class="fa-solid fa-heart"></i>
                         <tr>
                         <td>{{ donator.name }}</td>
                     </tr>
