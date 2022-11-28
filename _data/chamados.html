@@ -1,0 +1,117 @@
+---
+layout: page
+title: Chamados
+---
+
+<div class="container-donate">
+    <div class="container">
+        <p>Chamados BTRC.</p>
+
+        <div class="text-center">
+            <a class="btn" role="button" href="#" data-toggle="modal" data-target="#bitcoin-cash-modal"><img src="/img/Bipa.png" /><span>Pix</span></a>
+            <a class="btn" role="button" href="#" data-toggle="modal" data-target="#bitcoin-modal"><img src="/img/Bitcoin.png" /><span>Bitcoin</span></a>
+            <a class="btn" role="button" href="#" data-toggle="modal" data-target="#ethereum-modal"><img src="/img/Ethereum.png" /><span>Ethereum</span></a>
+       </div>
+
+       <div id="bitcoin-cash-modal" class="modal fade crypto-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Pix</h4>
+                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center">
+                        <img class="crypto-qr" src="/img/Bipa_QR.png" />
+                        <div class="card panel-default crypto-address">
+                            <div class="card-body">729cc661-a7f7-413e-ba74-66d2dee55368</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div id="bitcoin-modal" class="modal fade crypto-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Bitcoin (BTC) address</h4>
+                        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="text-center">
+                            <img class="crypto-qr" src="/img/Bitcoin_QR.png" />
+                            <div class="card panel-default crypto-address">
+                                <div class="card-body">3JVjYStxm189XtETvTfUwV2bGcLKFGRaaa</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="ethereum-modal" class="modal fade crypto-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Ethereum (ETH)</h4>
+                        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="text-center">
+                            <img class="crypto-qr" src="/img/Ethereum_QR.png" />
+                            <div class="card panel-default crypto-address">
+                                <div class="card-body">0x1372a8424b44d90bb038027159b7c063b844cc30</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+</div>
+
+<div class="container-donate-2">
+    <div class="container">
+        <div class="patrons-panel">
+            <h3>Dados da demanda</h3>
+            <table class="table">
+                <tr>
+                    <th>Cliente</th>
+                    <th>Chamado</th>
+                    <th>Contato</th>
+                    <th>Hora</th>
+                    <th>Quantidade/Equipamento</th>
+                    <th>Data</th>
+                    <th>Valor</th>
+                </tr>
+                {% assign sortedDonators = site.data.chamados | sort: "amount" | reverse %}
+                {% for donator in sortedDonators %}
+                <tr>
+                    <td>{{ donator.name }}
+                        {% if donator.telegram %}<a href="{{ donator.telegram }}" target="_blank"><i class="fab fa-telegram"></i></a>{% endif %}
+                        {% if donator.twitter %}<a href="{{ donator.twitter }}" target="_blank"><i class="fab fa-twitter"></i></a>{% endif %}
+                        {% if donator.facebook %}<a href="{{ donator.facebook }}" target="_blank"><i class="fab fa-facebook"></i></a>{% endif %}
+                        {% if donator.github %}<a href="{{ donator.github }}" target="_blank"><i class="fab fa-github"></i></a>{% endif %}
+                        {% if donator.twitch %}<a href="{{ donator.twitch }}" target="_blank"><i class="fab fa-twitch"></i></a>{% endif %}
+                        {% if donator.youtube %}<a href="{{ donator.youtube }}" target="_blank"><i class="fab fa-youtube"></i></a>{% endif %}
+                        {% if donator.linkedin %}<a href="{{ donator.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a>{% endif %}
+                        {% if donator.instagram %}<a href="{{ donator.instagram }}" target="_blank"><i class="fab fa-instagram"></i></a>{% endif %}
+                        {% if donator.steam %}<a href="{{ donator.steam }}" target="_blank"><i class="fab fa-steam"></i></a>{% endif %}
+                    </td>
+                    <td>{% if donator.cliente %}{{ donator.cliente }}{% else %}*{% endif %}</td>
+                    <td>{% if donator.chamado %}{{ donator.chamado }}{% else %}*{% endif %}</td>
+                    <td>{% if donator.contato %}{{ donator.contato }}{% else %}*{% endif %}</td>
+                    <td>{% if donator.qtdeqt %}{{ donator.qtdeqt }}{% else %}*{% endif %}</td>
+                    <td>{% if donator.data %}{{ donator.data }}{% else %}*{% endif %}</td>
+                    <td>{% if donator.hora %}{{ donator.hora }}{% else %}*{% endif %}</td>
+                    <td>{% if donator.valor %}R$ {{ donator.valor }}{% else %}*{% endif %}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+</div>
+
+{% include common-js.html %}
