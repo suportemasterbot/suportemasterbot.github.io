@@ -16,6 +16,7 @@ layout: default
                 Doações<i class="fa-solid fa-heart"></i>
             </a>
         </div>
+        <div class="collapse" id="download-panel">
             <div class="d-inline-block">
                  <div class="container-donate-2">
             <img class="img-fluid" src="/img/cashapp.png" alt="Image" height="80" width="80" />
@@ -30,9 +31,7 @@ layout: default
                                         </script>
                                     <head>
                                         <body onload="setInterval ('Atualizar()',1000)"
-                                                         <div class="container-donate-2">
-                                                    <table class="btn button">
-                                    <td>{{ donator.name }}</td></table>
+                                         <td>{{ donator.name }}</td></table>
                                     </body>
                                 </tr>
                                 {% endfor %}
