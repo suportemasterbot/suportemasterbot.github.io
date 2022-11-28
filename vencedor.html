@@ -14,6 +14,7 @@ layout: simple
                     {% assign sortedDonators = site.data.vencedor | sort: "amount" | reverse %}
                     {% for donator in sortedDonators %}
                     <tr>
+                        <img class="img-fluid" src="/img/cashapp.png" alt="Image" height="80" width="80" />
                         <td>{{ donator.name }}</td>
                     </tr>
                     {% endfor %}
