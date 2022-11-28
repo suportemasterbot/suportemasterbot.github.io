@@ -21,23 +21,30 @@ layout: default
                  <div class="container-donate-2">
             <img class="img-fluid" src="/img/cashapp.png" alt="Image" height="80" width="80" />
             <h2>VENCEDOR</h2>
-            <body onload="setInterval ('Atualizar()',1000)"
-            <div class="container-donate-2">
-       <table class="btn button">
-           {% assign sortedDonators = site.data.vencedor | sort: "amount" | reverse %}
-           {% for donator in sortedDonators %}
-           <tr>
-               <td>{{ donator.name }}</td>
-           </tr>
-           {% endfor %}
-       </table>
-                     </div>
-                  </div>
-               </div>
+            <center><head>
+                <body onload="setInterval ('Atualizar()',1000)"
+                                 <div class="container-donate-2">
+                            <table class="btn button">
+                                {% assign sortedDonators = site.data.vencedor | sort: "amount" | reverse %}
+                                {% for donator in sortedDonators %}
+                                <tr>
+                                    <td>{{ donator.name }}</td>
+                                </tr>
+                                {% endfor %}
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </center>
+        </div>
+    </div>
+</div>
+                </a>
             </div>
         </div>
     </div>
 </div>
+
 <div>
     <div class="container-fluid container-screenshot">
         <img class="img-fluid" src="/img/suportemasterbot.png" alt="ShareX screenshot" />
