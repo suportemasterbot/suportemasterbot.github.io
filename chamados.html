@@ -89,7 +89,7 @@ title: Chamados
                 {% assign sortedDonators = site.data.chamados | sort: "amount" | reverse %}
                 {% for donator in sortedDonators %}
                 <tr>
-                    <td>{{ donator.name }}
+                    <td>{{ donator.cliente }}
                         {% if donator.telegram %}<a href="{{ donator.telegram }}" target="_blank"><i class="fab fa-telegram"></i></a>{% endif %}
                         {% if donator.twitter %}<a href="{{ donator.twitter }}" target="_blank"><i class="fab fa-twitter"></i></a>{% endif %}
                         {% if donator.facebook %}<a href="{{ donator.facebook }}" target="_blank"><i class="fab fa-facebook"></i></a>{% endif %}
@@ -100,7 +100,6 @@ title: Chamados
                         {% if donator.instagram %}<a href="{{ donator.instagram }}" target="_blank"><i class="fab fa-instagram"></i></a>{% endif %}
                         {% if donator.steam %}<a href="{{ donator.steam }}" target="_blank"><i class="fab fa-steam"></i></a>{% endif %}
                     </td>
-                    <td>{% if donator.cliente %}{{ donator.cliente }}{% else %}*{% endif %}</td>
                     <td>{% if donator.chamado %}{{ donator.chamado }}{% else %}*{% endif %}</td>
                     <td>{% if donator.contato %}{{ donator.contato }}{% else %}*{% endif %}</td>
                     <td>{% if donator.hora %}{{ donator.hora }}{% else %}*{% endif %}</td>
