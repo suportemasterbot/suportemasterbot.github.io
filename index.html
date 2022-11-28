@@ -21,18 +21,18 @@ layout: default
                  <div class="container-donate-2">
             <img class="img-fluid" src="/img/cashapp.png" alt="Image" height="80" width="80" />
             <h2>VENCEDOR</h2>
-            <script type="text/javascript">
-                function Atualizar() {
-                    window.location.reload() ;
-                }
-                </script>
-            <head>
-                <body onload="setInterval ('Atualizar()',1000)"
-                                 <div class="container-donate-2">
-                            <table class="btn button">
                                 {% assign sortedDonators = site.data.vencedor | sort: "amount" | reverse %}
                                 {% for donator in sortedDonators %}
                                 <tr>
+                                    <script type="text/javascript">
+                                        function Atualizar() {
+                                            window.location.reload() ;
+                                        }
+                                        </script>
+                                    <head>
+                                        <body onload="setInterval ('Atualizar()',1000)"
+                                                         <div class="container-donate-2">
+                                                    <table class="btn button">
                                     <td>{{ donator.name }}</td>
                                 </tr>
                                 {% endfor %}
