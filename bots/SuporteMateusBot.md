@@ -1,10 +1,14 @@
 ---
 layout: markdown
-title: Dev builds
+title: SuporteMateusBot
 ---
 
-1. Open "Application settings" window from main window.
+## SuporteMateusBot
 
-2. Click "Install dev build" button to start auto update process.
 
-![](/img/ScreenshotDevBuilds.png)
+* Bot cheio de informações: [@SuporteMateusBot](https://t.me/SuporteMateusBot)
+
+### Funções
+
+* Em desenvolvimento... 
+
