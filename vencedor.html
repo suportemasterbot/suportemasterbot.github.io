@@ -1,9 +1,14 @@
 ---
 layout: simple
 ---
-<center>
-<meta http-equiv="refresh" content="30" />
-            </div>
+
+<script type="text/javascript">
+    function Atualizar() {
+        window.location.reload() ;
+    }
+    </script>
+<center><head>
+    <body onload="setInterval ('Atualizar()',5000)"
                      <div class="container-donate-2">
                 <table class="btn button">
                     {% assign sortedDonators = site.data.vencedor | sort: "amount" | reverse %}
