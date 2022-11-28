@@ -13,6 +13,6 @@ title: SuporteMasterBot
 * Arquivos 
 * Informações `Regional`
 * Software `Android`, `Windows` e `Linux`
-* Links úteis `Actions`, type `PutObject` and then select both `PutObject` and `PutObjectAcl` to give only put object permission
+* Links úteis  
 * Comandos e muito mais. 
 
