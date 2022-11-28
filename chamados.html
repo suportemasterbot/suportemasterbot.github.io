@@ -86,7 +86,7 @@ title: Chamados
                     <th>Data</th>
                     <th>Valor</th>
                 </tr>
-                {% assign sortedDonators = site.data.donators | sort: "amount" | reverse %}
+                {% assign sortedDonators = site.data.chamados | sort: "amount" | reverse %}
                 {% for donator in sortedDonators %}
                 <tr>
                     <td>{{ donator.name }}
