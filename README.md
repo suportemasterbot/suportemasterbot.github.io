@@ -3,9 +3,9 @@
 </p>
 
 <p align="center">
-  <a href="https://ko-fi.com/adi1090x"><img width="48px" src="https://raw.githubusercontent.com/archcraft-os/.github/main/profile/assets/1.png" alt="Donate for Archcraft on ko-fi"></a>&nbsp;
-  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6VETHHYHXESRN"><img width="48px" src="https://raw.githubusercontent.com/archcraft-os/.github/main/profile/assets/2.png" alt="Donate for Archcraft via Paypal"></a>&nbsp;
-  <a href="https://liberapay.com/adi1090x"><img width="48px" src="https://raw.githubusercontent.com/archcraft-os/.github/main/profile/assets/3.png" alt="Donate for Archcraft via Liberapay"></a>
+  <a href="https://ko-fi.com/nilsonlinux"><img width="48px" src="https://raw.githubusercontent.com/archcraft-os/.github/main/profile/assets/1.png" alt="Donate for SuporteMasterBot on ko-fi"></a>&nbsp;
+  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6VETHHYHXESRN"><img width="48px" src="https://raw.githubusercontent.com/archcraft-os/.github/main/profile/assets/2.png" alt="Donate for SuporteMasterBot via Paypal"></a>&nbsp;
+  <a href="https://liberapay.com/adi1090x"><img width="48px" src="https://raw.githubusercontent.com/archcraft-os/.github/main/profile/assets/3.png" alt="Donate for SuporteMasterBot via Liberapay"></a>
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
   <img src="https://img.shields.io/sourceforge/dt/archcraft.svg?label=downloads&logo=sourceforge&color=teal&style=for-the-badge">
 </p>
 
-<h4 align="center">Yet another minimal linux distribution, based on <a href="https://www.archlinux.org">Arch Linux</a>.</h4>
+
 
 <p align="center">
   <a href="https://archcraft.io" target="_blank"><img alt="home" src="https://img.shields.io/badge/HOME-darkblue?style=flat-square"></a>
@@ -25,4 +25,3 @@
   <a href="https://matrix.to/#/#archcraft:matrix.org" target="_blank"><img alt="matrix" src="https://img.shields.io/badge/MATRIX-green?style=flat-square"></a>
 </p>
 
-![img](https://raw.githubusercontent.com/archcraft-os/core-packages/main/calamares-config/files/calamares/branding/archcraft/welcome.png)
