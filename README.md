@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://archcraft.io"><img src="https://raw.githubusercontent.com/archcraft-os/.github/main/profile/assets/logo.gif" height="200" width="200" alt="Archcraft"></a>
+  <a href="https://archcraft.io"><img src="https://raw.githubusercontent.com/suportemasterbot/.github/main/img/suportemasterbot.gif" height="200" width="200" alt="Archcraft"></a>
 </p>
 
 <p align="center">
