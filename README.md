@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://ko-fi.com/nilsonlinux"><img width="48px" src="https://raw.githubusercontent.com/archcraft-os/.github/main/profile/assets/1.png" alt="Donate for SuporteMasterBot on ko-fi"></a>&nbsp;
   <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6VETHHYHXESRN"><img width="48px" src="https://raw.githubusercontent.com/archcraft-os/.github/main/profile/assets/2.png" alt="Donate for SuporteMasterBot via Paypal"></a>&nbsp;
-  <a href="https://liberapay.com/adi1090x"><img width="48px" src="https://raw.githubusercontent.com/archcraft-os/.github/main/profile/assets/3.png" alt="Donate for SuporteMasterBot via Liberapay"></a>
+  <a href="https://liberapay.com/SuporteMasterBot"><img width="48px" src="https://raw.githubusercontent.com/archcraft-os/.github/main/profile/assets/3.png" alt="Donate for SuporteMasterBot via Liberapay"></a>
 </p>
 
 <p align="center">
