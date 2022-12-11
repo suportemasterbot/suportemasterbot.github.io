@@ -86,7 +86,7 @@ title: Doações
                 {% assign sortedDonators = site.data.donators | sort: "amount" | reverse %}
                 {% for donator in sortedDonators %}
                 <tr>
-                    <td>{{ donator.name }}
+                    <td>{% if donator.name %}{{ donator.name }}{% else %}*{% endif %}
                         {% if donator.telegram %}<a href="{{ donator.telegram }}" target="_blank"><i class="fab fa-telegram"></i></a>{% endif %}
                         {% if donator.twitter %}<a href="{{ donator.twitter }}" target="_blank"><i class="fab fa-twitter"></i></a>{% endif %}
                         {% if donator.facebook %}<a href="{{ donator.facebook }}" target="_blank"><i class="fab fa-facebook"></i></a>{% endif %}
