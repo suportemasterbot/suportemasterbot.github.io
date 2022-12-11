@@ -12,7 +12,6 @@ title: Doações
             <a class="btn" role="button" href="#" data-toggle="modal" data-target="#bitcoin-modal"><img src="/img/Bitcoin.png" /><span>Bitcoin</span></a>
             <a class="btn" role="button" href="#" data-toggle="modal" data-target="#ethereum-modal"><img src="/img/Ethereum.png" /><span>Ethereum</span></a>
        </div>
-
        <div id="bitcoin-cash-modal" class="modal fade crypto-modal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -31,7 +30,6 @@ title: Doações
             </div>
         </div>
     </div>
-
         <div id="bitcoin-modal" class="modal fade crypto-modal" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -50,7 +48,6 @@ title: Doações
                 </div>
             </div>
         </div>
-
         <div id="ethereum-modal" class="modal fade crypto-modal" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -71,7 +68,6 @@ title: Doações
         </div>
    </div>
 </div>
-
 <div class="container-donate-2">
     <div class="container">
         <div class="patrons-panel">
@@ -86,7 +82,7 @@ title: Doações
                 {% assign sortedDonators = site.data.donators | sort: "amount" | reverse %}
                 {% for donator in sortedDonators %}
                 <tr>
-                    <td>{{ donator.name }}
+                    <td>{% if donator.name %}{{ donator.name }}{% else %}*{% endif %}
                         {% if donator.telegram %}<a href="{{ donator.telegram }}" target="_blank"><i class="fab fa-telegram"></i></a>{% endif %}
                         {% if donator.twitter %}<a href="{{ donator.twitter }}" target="_blank"><i class="fab fa-twitter"></i></a>{% endif %}
                         {% if donator.facebook %}<a href="{{ donator.facebook }}" target="_blank"><i class="fab fa-facebook"></i></a>{% endif %}
